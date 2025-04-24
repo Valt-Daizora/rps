@@ -1,19 +1,67 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-<title>Register - Rock, Paper, Scissors</title>
-<link rel="stylesheet" type="text/css" href="register.css">
-</head>
-<body>
-<form>
-<h1>Register Now!</h1>
-<input type="text" name="" placeholder="Username">
-<input type="email" name="" placeholder="Email">
-<input type="password" name="" placeholder="Create Password"> 
-<input type="password" name="" placeholder="Confirm Password">
-<a href="rps.html"><button class="submit" style="cursor: poiner;" onclick="document.location='rps.html'">Register</button></a>
-</form>
-<a style="margin-top: 30px; font-size: 20px; color:blue; text-decoration: none;" href="index.html">Have An Account?</a>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Rock, Paper, Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body style="font-family: Arial;">
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Register</h2>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            type="username"
+            placeholder="Username"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+            <i class="fa fa-user"></i>
+            <input
+              type="email"
+              placeholder="Email"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+           type="password" placeholder="Create Password"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group">
+            <i class="fa fa-unlock-alt"></i>
+            <input
+              type="password"
+             type="password" placeholder="Confirm Password"
+              class="input_text"
+              autocomplete="off"
+            />
+          </div>
+        <div style="height: 50px; width: 100%; margin-top: 50px;" class="button_group" id="login_button">
+          <a href="rps.html">Register</a>
+        </div>
+        <div class="fotter">
+          <a style="margin-left: 32%;" class="register" href="index.html">Have An Account?</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+  </body>
 </html>
